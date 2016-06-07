@@ -61,6 +61,9 @@ $(window).ready(function() {
   var pg = $('p.bigname')[0];
   pg.innerText = b.name()[0];
 
+  var nn = new NiceNumber();
+  $('p#serving')[0].innerText = 'Currently serving ' + nn.text(b.namespaceSize()) + ' names!';
+
 
 	$('a#link-home').click(function() {
 		$('li#item-home').addClass('active');
@@ -90,6 +93,7 @@ $(window).ready(function() {
   $('a#nextbutton').click(function() {
     pg.innerText = b.name()[0];
   });
+
 });
 
 </script>
@@ -126,7 +130,7 @@ $(window).ready(function() {
             <p class="lead">
               <a href="#" id="nextbutton" name="nextButton" class="btn btn-lg btn-default">Another name?</a>
             </p>
-            <p> Currently serving up over 45 million names! </p>
+            <p id="serving" name="serving"> Currently serving up over 45 million names! </p>
           </div>
 
           <div id="div-about" name="div-about" class="inner cover" style="display: none">
