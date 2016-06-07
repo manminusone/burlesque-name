@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
+<script src="ie10-viewport-bug-workaround.js"></script>
+
+<link href="cover.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+<link href='https://fonts.googleapis.com/css?family=Sancreek|Open+Sans|Oleo+Script' rel='stylesheet' type='text/css'>
+
+<title> burlesque name </title>
+
+<script language="JavaScript" src="burlesque-name.js"></script>
+<script language="JavaScript" src="NiceNumber.js"></script>
+
+<!-- red curtain image: https://www.flickr.com/photos/giovannigaryurgelles/4039022510 -->
+
+<style>
+
+	body {
+		font-family: 'Open Sans',sans-serif;
+		background: url(curtains.jpg); 
+		background-repeat: repeat-y;
+		background-size: 100%;
+	}
+	h1.cover-heading { 
+		font-family: 'Sancreek',sans-serif; 
+		background: -webkit-linear-gradient(#fff, #f33);
+		-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1px 1px 12px rgba(255,255,255, 0.4);
+	}
+	div.mastfoot {
+		background-color: #333;
+	}
+
+  p.bigname { font-family: 'Oleo Script',script; font-size: 4em; }
+
+</style>
+
+<script language="JavaScript">
+$(window).ready(function() {
+
+  var b = new BurlesqueName();
+  var pg = $('p.bigname')[0];
+  pg.innerText = b.name()[0];
+
+
+	$('a#link-home').click(function() {
+		$('li#item-home').addClass('active');
+		$('li#item-about,li#item-contact,li#item-disclaimer').removeClass('active');
+		$('div#div-about,div#div-contact,div#div-disclaimer').hide();
+		$('div#div-home').show();
+	});
+	$('a#link-about').click(function() {
+		$('li#item-about').addClass('active');
+		$('li#item-home,li#item-contact,li#item-disclaimer').removeClass('active');
+		$('div#div-home,div#div-contact,div#div-disclaimer').hide();
+		$('div#div-about').show();
+	});
+  $('a#link-disclaimer').click(function() {
+    $('li#item-disclaimer').addClass('active');
+    $('li#item-home,li#item-about,li#item-contact').removeClass('active');
+    $('div#div-home,div#div-about,div#div-contact').hide();
+    $('div#div-disclaimer').show();
+  });
+  $('a#link-contact').click(function() {
+    $('li#item-contact').addClass('active');
+    $('li#item-home,li#item-about,li#item-disclaimer').removeClass('active');
+    $('div#div-home,div#div-about,div#div-disclaimer').hide();
+    $('div#div-contact').show();
+  });
+
+  $('a#nextbutton').click(function() {
+    pg.innerText = b.name()[0];
+  });
+});
+
+</script>
+
+
+</head>
+<body>
+
+<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+<div class="site-wrapper">
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">burlesque.name</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active" id="item-home" name="item-home"><a href="#" id="link-home" name="link-home">Home</a></li>
+                  <li id="item-about" name="item-about"><a href="#" id="link-about" name="link-about">About</a></li>
+                  <li id="item-disclaimer" name="item-disclaimer"><a href="#" id="link-disclaimer" name="link-disclaimer">Disclaimer</a></li>
+                  <li id="item-contact" name="item-contact"><a href="#" id="link-contact" name="link-contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div id="div-home" name="div-home" class="inner cover">
+            <h1 class="cover-heading">BURLESQUE NAME</h1>
+            <p class="lead"> Ready to start your career in burlesque dancing? You'll need a good performing name! Why not try this one on for size? </p>
+            <p class="bigname"> &nbsp; </p>
+            <p class="lead">
+              <a href="#" id="nextbutton" name="nextButton" class="btn btn-lg btn-default">Another name?</a>
+            </p>
+            <p> Currently serving up over 45 million names! </p>
+          </div>
+
+          <div id="div-about" name="div-about" class="inner cover" style="display: none">
+          	<h1> About this site </h1>
+          	<p class="lead"> This site is the latest version of a name-generating algorithm that was first hosted at <a href="http://www.empty-handed.com/">Empty-Handed.com,</a> and refined as part of the <a href="http://manminusone.com/">Man Minus One</a> series of projects. </p>
+          	<p> Technologies used for this site include <a href="http://www.getbootstrap.com/">Bootstrap,</a> <a href="http://www.jquery.com/">jQuery,</a> <a href="http://fontawesome.io/">Font Awesome,</a> and <a href="http://gandi.net/">Gandi</a> for hosting.</p>
+          </div>
+
+          <div id="div-disclaimer" name="div-disclaimer" class="inner cover" style="display: none"">
+            <h1> Disclaimer </h1>
+            <p> The content for this website is randomly generated, and as such has not been completely reviewed by 
+            humans. While we have taken great pains to prevent objectionable or inappropriate content from being
+            generated, we acknowledge that certain combinations of content may cause offense or objection, and for that
+            we apologize in advance. This site is provided as entertainment, and no offense at all is meant. </p>
+
+            <p> If you have concerns about the content on this site, please contact us through any of the 
+            means listed in the Contact tab. </p>
+          </div>
+
+          <div id="div-contact" name="div-contact" class="inner cover" style="display: none">
+          	<h1> Contact us</h1>
+          	<p class="lead"> For details on the site, please contact us through any of these social media: </p>
+
+          	<p> <a href="http://www.twitter.com/burlesquename"><i class="fa fa-4x fa-twitter-square"></i></a>
+          	  &nbsp;
+          	  <a href="http://instagram.com/manminusone"><i class="fa fa-4x fa-instagram"></i></a>
+          	  &nbsp;
+          	  <a href="http://www.flickr.com/jima"><i class="fa fa-4x fa-flickr"></i></a>
+          	</p>
+          	<p class="lead"> Or if you prefer email, toots at burlesque dot name. </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+            	<p> <i class="fa fa-creative-commons"></i> This site is licensed under a Creative Commons license. </p>
+
+              <p>Adapted from the Cover template for <a href="http://getbootstrap.com">Bootstrap</a> created by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+
+              <p> This site is one of many project created by Man Minus One. For further information
+              	please visit <a href="http://www.manminusone.com/">manminusone.com.</a> </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</body>
+</html>
