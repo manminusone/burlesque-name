@@ -18,7 +18,7 @@ function BurlesqueName() {
         "Fan Dancer,Flash,Friendly,Fidgeter,Fascination,Flirt", // f
         "Gesticulater,Gyrater,Gumdrop,Glamour Gal,Grinder,Good Time Gal", // g
         "Honey,Hustler,Hot Dog,Harlot", // h
-        "Idol,Incredible,Immorality", // i
+        "Idol,Incredible,Immorality,Ingenue", // i
         "Jumper,Jiggler,Jaw-Dropper,Jell-O Mold,Juicy Fruit", // j
         "Knock-Out,Knocker", // k
         "Lovely,Lady,Lass", // l
@@ -32,7 +32,7 @@ function BurlesqueName() {
         "Tassel Tosser,Temptation,Terror,Titwillow,Twister,Trifle,Top-Twister,Twink,Traffic-Stopper,Temptress", // t
         "Undergarment Undoer,Unzipper", // u
         "Va-Va-Voom,Vacillator", // v
-        "Wonder,Wiggler,Wobbler,Wagger,Waggle,Whiz,One-Woman Wonder,Wicked Woman", // w
+        "Wonder,Wiggler,Wobbler,Wagger,Waggler,Whiz,One-Woman Wonder,Wicked Woman", // w
         "Xtasy,Excellence,Exhibitionist", // x
         "Yo-Yo", // y
         "Zipper,Zipper-Puller,Zig-Zag" // z
@@ -108,7 +108,7 @@ function BurlesqueName() {
             ];
     this.punLname = [
                 "Cox","Bottom","Sitwell","Cummings","Topps","Wank","Peters","Cladwell","O'Toole","Handfull",
-                "Biggun","Petting","Plenty","Bottie","Cravesitt"
+                "Biggun","Petting","Plenty","Bottie","Cravesitt","Purdy"
             ];
             
     this.alphaFname = [
@@ -146,7 +146,7 @@ function BurlesqueName() {
                 "Detroit,Dallas,Denver,Danville,Dayton,Des Moines,Davenport",
                 "Eltingville,Evansville,Erie,Escondido",
                 "Florida,Frisco,Fort Lauderdale,Fort Wayne,Fort Worth,Fresno",
-                "Georgia,Glendale,Grand Rapids,Green Bay,",
+                "Georgia,Glendale,Grand Rapids,Green Bay,Geneva",
                 "Hawaii,Hilo,Honolulu,Houston,Hartford,Huntsville",
                 "Idaho,Indiana,Iowa,Indianapolis,Inglewood,Irvine,Irving",
                 "Jersey,Jacksonville,Jersey City,Joliet,Janesville",
