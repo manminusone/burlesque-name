@@ -10,7 +10,7 @@ function BurlesqueName() {
     };
 
     this.alphaNoun = [
-        "Arse-Shaker,Apparition,Amazer,Amazon,Apple-cheek,Acrobat,Astounder,Astonishment,Abundance,Allurement", // a
+        "Arse-Shaker,Apparition,Amazer,Amazon,Apple-Cheek,Acrobat,Astounder,Astonishment,Abundance,Allurement", // a
         "Bouncer,Butterfly,Beauty,Bombshell,Bubble,Bird,Bra-Buster,Belle,Bloom,Bemusement,Broad,Babe,Bedazzler", // b
         "Cutie,Candy,Comfort,Cheerleader,Contortionist,Confounder,Chick,Colleen", // c
         "Dream,Dancer,Drawer-Dropper,Dazzler,Dazer,Dame,Doll,Debaucher", // d
@@ -113,7 +113,7 @@ function BurlesqueName() {
             
     this.alphaFname = [
                 "Annie,Amelia,Anna,Angie",
-                "Betty,Bea,Brenda,Brandy",
+                "Betty,Bea,Brenda,Brandy,Bobbi",
                 "Carrie,Cherry,Candy",
                 "Debbie,Daniella,Dina",
                 "Edie,Etta,Emma,Eva",
@@ -129,7 +129,7 @@ function BurlesqueName() {
                 "Ophelia,Olivia,Olive",
                 "Pansy,Petunia,Patty",
                 "Qadesh,Qadira,Qiana,Qubaliah,Queisha,Quella,Quieta,Quoba",
-                "Roberta,Ruthie,Rachel,Raquel",
+                "Roberta,Ruthie,Rachel,Raquel,Roxie",
                 "Susie,Sabrina,Sammi",
                 "Teresa,Tiffany,Taffy,Tina",
                 "Una,Uma",
