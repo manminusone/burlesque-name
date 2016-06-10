@@ -6,6 +6,7 @@ function NiceNumber() {
         return new NiceNumber();
     }
     this.text = function(num) {
+        console.log('NiceNumber: n='+num);
 
     	if (num > 10000000)  { // over 10 million
     		var lo_end = 5 * Math.floor(num / 5000000),

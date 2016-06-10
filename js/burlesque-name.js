@@ -81,7 +81,7 @@ function BurlesqueName() {
                 "Ginger","Rosemary","Cherry","Pepper","Coco","Sugar","Honey","Cinnamon",
                 "Brandy","Tanqueray","Martini","Ambrosia",
                 "Kitty","Tabby","Rusty","Fluffy",
-                "Blaze","Sparkle",
+                "Blaze","Sparkle","Magenta",
                 "Friday","Wednesday","April","May","June","July",
                 "Venus","Jezebel",
                 "Peaches","Marmalade","Tangerine","Ambrosia","Twinkie",
@@ -104,7 +104,7 @@ function BurlesqueName() {
             ];
     this.punFname = [
                 "Fanny","Candy","Fonda","Lovey","Ophelia","Ida","Iva","Pussy","Merry","Happy",
-                "Juicy","Rusty","Dusty","Ivana"
+                "Juicy","Rusty","Dusty","Ivana","Sweetie"
             ];
     this.punLname = [
                 "Cox","Bottom","Sitwell","Cummings","Topps","Wank","Peters","Cladwell","O'Toole","Handfull",
