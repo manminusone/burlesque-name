@@ -32,3 +32,5 @@ a.btn-primary:hover { color: #fff !important; }
 
 
 #footerdiv { background-color: #333; padding: 12px;}
+
+p.bigname { font-family: 'Oleo Script',script; font-size: 4em; }
