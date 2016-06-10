@@ -15,23 +15,23 @@ function BurlesqueName() {
         "Cutie,Candy,Comfort,Cheerleader,Contortionist,Confounder,Chick,Colleen", // c
         "Dream,Dancer,Drawer-Dropper,Dazzler,Dazer,Dame,Doll,Debaucher", // d
         "Explosion,Excitement,Ecdysiast,Elegance,Eye-Opener", // e
-        "Fan Dancer,Flash,Friendly,Fidgeter,Fascination,Flirt", // f
+        "Fan Dancer,Flash,Friendly,Fidgeter,Fascination,Flirt,Floozie,Flame", // f
         "Gesticulater,Gyrater,Gumdrop,Glamour Gal,Grinder,Good Time Gal", // g
         "Honey,Hustler,Hot Dog,Harlot", // h
         "Idol,Incredible,Immorality,Ingenue", // i
         "Jumper,Jiggler,Jaw-Dropper,Jell-O Mold,Juicy Fruit", // j
         "Knock-Out,Knocker", // k
-        "Lovely,Lady,Lass", // l
+        "Lovely,Lady,Lass,Looker", // l
         "Mover,Mistress,Manic,Mermaid,Marvel,Miracle,Mama,Miss", // m
         "Nuisance,Naughty,Nightie,Nightingale,Nymph,Nurse", // n
         "Outstander,Operator,Outfit-Opener", // o
         "Princess,Peach,Pretty,Perplexer,Peeler,Powerhouse", // p
         "Queen,Quiverer,Quick-Changer,Quickie", // q
         "Redhead,Rapture,Rocket,Redtail,Wriggler,Wrassler,Rotater,Rose", // r
-        "Siren,Sin-sation,Shaker,Shortie,Sweetie,Stupefier,Stunner,Shocker,Shimmy,Showgirl,Surprise,Startler,Sensation,Stripteuse,Silk Stocking,Strawberry,She-Devil", // s
+        "Siren,Sin-sation,Shaker,Shortie,Sweetie,Stupefier,Stunner,Shocker,Shimmy,Showgirl,Surprise,Startler,Sensation,Stripteuse,Silk Stocking,Strawberry,She-Devil,Sparkler,Sprite,Spirit", // s
         "Tassel Tosser,Temptation,Terror,Titwillow,Twister,Trifle,Top-Twister,Twink,Traffic-Stopper,Temptress", // t
         "Undergarment Undoer,Unzipper", // u
-        "Va-Va-Voom,Vacillator", // v
+        "Va-Va-Voom,Vacillator,Volcano,Vamp", // v
         "Wonder,Wiggler,Wobbler,Wagger,Waggler,Whiz,One-Woman Wonder,Wicked Woman", // w
         "Xtasy,Excellence,Exhibitionist", // x
         "Yo-Yo", // y
@@ -39,32 +39,32 @@ function BurlesqueName() {
     ];
 
     this.alphaAdj = [
-        'Ample,Amazing,Atypical,Alluring,Attracting,Appealing,Angelic', // a
-        'Bewitching,Bedazzling,Beautiful,Beguiling,Bawdy,Beckoning,Built,Busty', // b
-        'Curvaceous,Comely,Captivating,Charming,Come-Hither,Curvy,Charismatic,Classy', // c
+        'Ample,Amazing,Atypical,Alluring,Attracting,Appealing,Angelic,Animated', // a
+        'Bewitching,Bedazzling,Beautiful,Beguiling,Bawdy,Beckoning,Built,Busty,Bouncy,Brash,Breezy,Bubbling', // b
+        'Curvaceous,Comely,Captivating,Charming,Come-Hither,Curvy,Charismatic,Classy,Cheerful', // c
         'Delightful,Dazzling,Desirable,Drawing,Devilish,Dominating,Domineering,Delicate,Divine', // d
-        'Effervescent,Enchanting,Engaging,Enthralling,Enticing,Endowed,Elegant,Entrancing,Exquisite,Excellent', // e
-        'Fluid,Fabulous,Fascinating,Flirtatious,Full-Bosomed,Full-Figured,Flashy,Foxy,Fine', // f
-        'Gracious,Glamorous,Glittering,Gorgeous,Good-Looking,Graceful,Grand', // g
-        'Happy,Humorous,Huge,Healthy,Hearty', // h
+        'Effervescent,Enchanting,Engaging,Enthralling,Enticing,Endowed,Elegant,Entrancing,Exquisite,Excellent,Erotic,Ebullient,Exuberant', // e
+        'Fluid,Fabulous,Fascinating,Flirtatious,Full-Bosomed,Full-Figured,Flashy,Foxy,Fine,Frolicsome', // f
+        'Gracious,Glamorous,Glittering,Gorgeous,Good-Looking,Graceful,Grand,Gay', // g
+        'Happy,Humorous,Huge,Healthy,Hearty,High-Spirited', // h
         'Inviting,Irresistable,Indomitable,Ideal', // i
-        'Joyous,Jutting,Jiggling', // j
-        'Kittenish,Kinky,Kooky', // k
+        'Joyous,Jutting,Jiggling,Jolly,Jumping', // j
+        'Kittenish,Kinky,Kooky,Keen', // k
         'Lyrical,Luscious,Lascivious,Lively,Lovely,Luring,Lovable,Lusty', // l
-        'Mysterious,Magical,Mountainous,Magnetic,Magnificent,Marvelous', // m
+        'Mysterious,Magical,Mountainous,Magnetic,Magnificent,Marvelous,Merry', // m
         'Naughty,Nasty,Needful,Nudie,Nifty,Nice', // n
         'Outrageous,Overpowering,Overwhelming', // o
-        'Pretty,Pleasing,Pleasant,Provocative,Potent,Powerful,Plump,Prestigious,Petite', // p
+        'Pretty,Pleasing,Pleasant,Provocative,Potent,Powerful,Plump,Prestigious,Petite,Playful', // p
         'Quizzical', // q
-        'Ravishing,Rude,Robust,Radiant,Refined,Resplendent', // r
-        'Statuesque,Shocking,Sinful,Sizzling,Seductive,Scrumptious,Stunning,Supefying,Shapely,Stacked,Splendid,Sublime,Strutting', // s
+        'Ravishing,Rude,Robust,Radiant,Refined,Resplendent,Rocking', // r
+        'Statuesque,Shocking,Sinful,Sizzling,Seductive,Scrumptious,Stunning,Supefying,Shapely,Stacked,Splendid,Sublime,Strutting,Scintillating,Sparkling,Sprightly,Swinging', // s
         'Tantalizing,Tempting,Towering', // t
-        'Unbelievable,Unreal,Unavoidable,Unconquerable', // u
-        'Vivacious,Vexing', // v
+        'Unbelievable,Unreal,Unavoidable,Unconquerable,Uncanny,Unmatched', // u
+        'Vivacious,Vexing,Volcanic,Vibrant,Vital', // v
         'Witchy,Wild,Winning,Wondrous,Wonderful,Well-Endowed,Well-Formed', // w
         'Exciting,Excellent', // x
         'Youthful', // y
-        'Zaftig,Zany,Zealous'  // z
+        'Zaftig,Zany,Zealous,Zippy,Zesty'  // z
     ];
 
 
@@ -129,7 +129,7 @@ function BurlesqueName() {
                 "Ophelia,Olivia,Olive",
                 "Pansy,Petunia,Patty",
                 "Qadesh,Qadira,Qiana,Qubaliah,Queisha,Quella,Quieta,Quoba",
-                "Roberta,Ruthie,Rachel,Raquel,Roxie",
+                "Roberta,Ruthie,Rachel,Raquel,Rosie,Roxie",
                 "Susie,Sabrina,Sammi",
                 "Teresa,Tiffany,Taffy,Tina",
                 "Una,Uma",
@@ -137,7 +137,7 @@ function BurlesqueName() {
                 "Wanda,Wilhelmina,Weeza",
                 "Xuxa,Xaviera",
                 "Yancey,Yolanda",
-                "Zelda"
+                "Zelda,Zsa Zsa"
             ];
     this.placename = [
                 "Anchorage,Arizona,Atlanta,Alabama,Albany,Abilene,Albuquerque,Atlantic City",
@@ -155,12 +155,12 @@ function BurlesqueName() {
                 "Montana,Memphis,Maryland,Michigan,Massachusetts,Missoula,Minneapolis,Miami,Montreal,Madison,Mesa,Milwaukee,Murfreesboro",
                 "Nevada,Natchez,Nashville,Knoxville,Naperville,New Orleans,New Haven,New York",
                 "Oklahoma,Omaha,Oregon,Orlando,Oakland,Oxnard",
-                "Parsippany,Philly,Portland,Pennsylvania,Phoenix,El Paso,Pittsburgh,Palmdale,Pasadena,Peoria,Pomona,Provo,Pueblo",
-                "Queensland,Quebec",
-                "Rhode Island,Reno,Raleigh,Richmond,Riverside",
+                "Parsippany,Philly,Portland,Pennsylvania,Phoenix,El Paso,Pittsburgh,Palmdale,Pasadena,Peoria,Pomona,Provo,Pueblo,Pago Pago",
+                "Queensland,Quebec,Quito,Quezon City",
+                "Rhode Island,Reno,Raleigh,Richmond,Riverside,Riverdale,Ripon,Raleigh",
                 "Sandusky,San Francisco,Seattle,Savannah,Santa Fe, St. Louis,Scarsdale,Sacramento,Salem,Salt Lake City,San Diego,Scottsdale,Shreveport,Spokane,Springfield,Syracuse",
                 "Tampa,Texas,Tallahassee,Taos,Tuscaloosa,Tacoma,Tempe,Toledo,Topeka,Tuscon,Tulsa",
-                "Ulan Bator,Utah,Utrecht",
+                "Ulan Bator,Utah,Utrecht,Upper Sandusky",
                 "Virginia,Vegas,Vermont,Vancouver,Vallejo",
                 "Washington,Walla Walla,Wisconsin,Winnipeg,Wichita,Waco",
                 "Exeter",
