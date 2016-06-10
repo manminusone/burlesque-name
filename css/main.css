@@ -1,0 +1,34 @@
+body { font-family: 'Open Sans',sans-serif; background: url(../image/repeat-curtain.png); background-size: 100%; background-repeat: repeat-y; color: #fff;}
+a:visited, a:hover, a:link { color: #fff; }
+
+.pull-left { padding-top: 18px; font-size: 2em; }
+
+.nav-underline li { display: inline-block; }
+.nav-underline li:hover { }
+.nav-underline li a:hover { text-decoration: none; background:transparent;}
+.nav-underline li a:active,
+.nav-underline li a:focus { background: transparent; }
+.nav-underline li.active,
+.nav-underline li.active:hover { border-bottom: 4px solid white; }
+.nav-underline li:hover { border-bottom: 2px solid white; }
+
+a.btn-primary:link,
+a.btn-primary:visited,
+a.btn-primary:active,
+a.btn-primary:focus,
+a.btn-primary:hover { color: #fff !important; }
+
+#bjumbo h2 { font-family: Sancreek,script; 
+	background: -webkit-linear-gradient(#f88, #f33);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 12px rgba(0,0,0, 0.4);
+}
+.tab-pane p  a:active,
+.tab-pane p  a:focus,
+.tab-pane p  a:hover,
+.tab-pane p a:visited,
+.tab-pane p a:link { color: #003;  }
+
+
+#footerdiv { background-color: #333; padding: 12px;}
