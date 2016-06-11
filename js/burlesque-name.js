@@ -253,7 +253,7 @@ function BurlesqueName() {
     );
 
     this.name = function() { 
-        return this.namelist[Math.floor(Math.random() * this.namelist.length)](this); 
+        return this.rand(this.namelist)[0](this);
     };
 
     this.namespaceSize = function() {
