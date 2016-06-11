@@ -55,7 +55,7 @@ function BurlesqueName() {
 
     this.alphaAdj = this.diceArray(this,[
         'Ample,Amazing,Atypical,Alluring,Attracting,Appealing,Angelic,Animated', // a
-        'Bewitching,Bedazzling,Beautiful,Beguiling,Bawdy,Beckoning,Built,Busty,Bouncy,Brash,Breezy,Bubbling', // b
+        'Bewitching,Bedazzling,Beautiful,Beguiling,Bawdy,Beckoning,Built,Busty,Bouncy,Brash,Breezy,Bubbling,Buoyant', // b
         'Curvaceous,Comely,Captivating,Charming,Come-Hither,Curvy,Charismatic,Classy,Cheerful', // c
         'Delightful,Dazzling,Desirable,Drawing,Devilish,Dominating,Domineering,Delicate,Divine', // d
         'Effervescent,Enchanting,Engaging,Enthralling,Enticing,Endowed,Elegant,Entrancing,Exquisite,Excellent,Erotic,Ebullient,Exuberant', // e
@@ -66,7 +66,7 @@ function BurlesqueName() {
         'Joyous,Jutting,Jiggling,Jolly,Jumping', // j
         'Kittenish,Kinky,Kooky,Keen', // k
         'Lyrical,Luscious,Lascivious,Lively,Lovely,Luring,Lovable,Lusty', // l
-        'Mysterious,Magical,Mountainous,Magnetic,Magnificent,Marvelous,Merry', // m
+        'Mysterious,Magical,Mountainous,Magnetic,Magnificent,Marvelous,Merry,Mystical', // m
         'Naughty,Nasty,Needful,Nudie,Nifty,Nice', // n
         'Outrageous,Overpowering,Overwhelming', // o
         'Pretty,Pleasing,Pleasant,Provocative,Potent,Powerful,Plump,Prestigious,Petite,Playful', // p
@@ -84,16 +84,16 @@ function BurlesqueName() {
 
 
     this.frenchFname = [ "Fifi","Gigi","Trixie","Jolie","Babette","Angelique","Colette","Amelie","Aimee","Antoinette",
-                "Blanche","Caresse","Cherie","Chantal","Clarice","Dominique","Georgette","Vivienne","Yvette" ];
+                "Blanche","Caresse","Cherie","Chantal","Clarice","Dominique","Georgette","Vivienne","Yvette","Marie" ];
     this.frenchLname = [ "LeMure","de Ville","DeVil","au Lait","du Bois","diVine","Parfait",
                 "d'Arcy","Champagne","ala Mode","Petite","de Vivre","Fatale", "de Milo","Frou-frou","Royale","Flambee",
-                "Brassiere","DuPree","Deluxe"
+                "Brassiere","DuPree","Deluxe","Oui-Oui","Dansette"
             ];
     this.objectFname = [
                 "Ruby","Amethyst","Sapphire","Emerald","Onyx","Topaz","Pearl","Crystal","Amber",
                 "Montana","Dakota","Florida","Georgia","Nevada","Carolina","Virginia","Wyoming","Venus","Cairo",
                 "Daisy","Violet","Rose","Buttercup","Holly","Magnolia","Pansy","Lavender","Hyacinth","Dahlia","Camellia","Azalea","Begonia","Blossom","Saffron","Bluebell","Jasmine","Poppy","Indigo","Flora","Iris",
-                "Ginger","Rosemary","Cherry","Pepper","Coco","Sugar","Honey","Cinnamon",
+                "Ginger","Rosemary","Cherry","Pepper","Coco","Sugar","Honey","Cinnamon","Cilantro",
                 "Brandy","Tanqueray","Martini","Ambrosia",
                 "Kitty","Tabby","Rusty","Fluffy",
                 "Blaze","Sparkle","Magenta",
@@ -142,7 +142,7 @@ function BurlesqueName() {
                 "Marilyn,Minnie,Maggie,Marigold",
                 "Nellie,Nancy,Nina,Noel",
                 "Ophelia,Olivia,Olive",
-                "Pansy,Petunia,Patty",
+                "Pansy,Petunia,Patty,Polly,Pat",
                 "Qadesh,Qadira,Qiana,Qubaliah,Queisha,Quella,Quieta,Quoba",
                 "Roberta,Ruthie,Rachel,Raquel,Rosie,Roxie",
                 "Susie,Sabrina,Sammi",
@@ -179,7 +179,7 @@ function BurlesqueName() {
                 "Virginia,Vegas,Vermont,Vancouver,Vallejo",
                 "Washington,Walla Walla,Wisconsin,Winnipeg,Wichita,Waco",
                 "Exeter",
-                "Yonkers,Yamaguchi,Yamato,Yongzhouk",
+                "Yonkers,Yamaguchi,Yamato,Yongzhouk,Yreka",
                 "Zanzibar,Zaragoza,Zurich"
             ]);
     this.honorific = [ "Miss","Lady","Madam","Princess","Duchess","Miss Lady","Madam Chairwoman","Mrs.","Mme.","Queen",
