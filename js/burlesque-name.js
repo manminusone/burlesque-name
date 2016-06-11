@@ -6,10 +6,25 @@ function BurlesqueName() {
     }
 
     this.rand = function(arr) {
-        return arr[Math.floor(Math.random() * arr.length)];
+        var retval = arr.splice(Math.floor(Math.random() * (arr.length - 1)),1);
+        arr.push(retval[0]);
+        return retval;
     };
 
-    this.alphaNoun = [
+    this.diceArray = function(bobj,a) {
+        if (a.length == 26) {
+
+            var newArray = [];
+
+            for (var i = 0; i < 26; ++i) {
+                newArray[i] = a[i].split(",");
+            }
+            return newArray;
+        } else
+            return a;
+    };
+
+    this.alphaNoun = this.diceArray(this,[
         "Arse-Shaker,Apparition,Amazer,Amazon,Apple-Cheek,Acrobat,Astounder,Astonishment,Abundance,Allurement", // a
         "Bouncer,Butterfly,Beauty,Bombshell,Bubble,Bird,Bra-Buster,Belle,Bloom,Bemusement,Broad,Babe,Bedazzler", // b
         "Cutie,Candy,Comfort,Cheerleader,Contortionist,Confounder,Chick,Colleen", // c
@@ -36,9 +51,9 @@ function BurlesqueName() {
         "Xtasy,Excellence,Exhibitionist", // x
         "Yo-Yo", // y
         "Zipper,Zipper-Puller,Zig-Zag" // z
-    ];
+    ]);
 
-    this.alphaAdj = [
+    this.alphaAdj = this.diceArray(this,[
         'Ample,Amazing,Atypical,Alluring,Attracting,Appealing,Angelic,Animated', // a
         'Bewitching,Bedazzling,Beautiful,Beguiling,Bawdy,Beckoning,Built,Busty,Bouncy,Brash,Breezy,Bubbling', // b
         'Curvaceous,Comely,Captivating,Charming,Come-Hither,Curvy,Charismatic,Classy,Cheerful', // c
@@ -65,7 +80,7 @@ function BurlesqueName() {
         'Exciting,Excellent', // x
         'Youthful', // y
         'Zaftig,Zany,Zealous,Zippy,Zesty'  // z
-    ];
+    ]);
 
 
     this.frenchFname = [ "Fifi","Gigi","Trixie","Jolie","Babette","Angelique","Colette","Amelie","Aimee","Antoinette",
@@ -111,7 +126,7 @@ function BurlesqueName() {
                 "Biggun","Petting","Plenty","Bottie","Cravesitt","Purdy"
             ];
             
-    this.alphaFname = [
+    this.alphaFname = this.diceArray(this,[
                 "Annie,Amelia,Anna,Angie",
                 "Betty,Bea,Brenda,Brandy,Bobbi",
                 "Carrie,Cherry,Candy",
@@ -138,8 +153,8 @@ function BurlesqueName() {
                 "Xuxa,Xaviera",
                 "Yancey,Yolanda",
                 "Zelda,Zsa Zsa"
-            ];
-    this.placename = [
+            ]);
+    this.placename = this.diceArray(this,[
                 "Anchorage,Arizona,Atlanta,Alabama,Albany,Abilene,Albuquerque,Atlantic City",
                 "Boston,Boise,Birmingham,Bismarck,Buffalo",
                 "Chicago,California,Carolina,Colorado,Calgary,Charlotte,Charleston,Chattanooga",
@@ -166,18 +181,19 @@ function BurlesqueName() {
                 "Exeter",
                 "Yonkers,Yamaguchi,Yamato,Yongzhouk",
                 "Zanzibar,Zaragoza,Zurich"
-            ];
+            ]);
     this.honorific = [ "Miss","Lady","Madam","Princess","Duchess","Miss Lady","Madam Chairwoman","Mrs.","Mme.","Queen",
                 "Cowgirl","HRH","Li'l","Nurse","Dame","Librarian" ];
 
+    this.alphaNum = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
 
     this.optionalSuffix = function(bobj) {
         if (Math.random() > 0.5) {
-            var whichOne = Math.floor(Math.random() * 26);
+            var whichOne = bobj.rand(bobj.alphaNum);
             if (Math.random() > 0.5)
-                return ", the "+bobj.rand(bobj.alphaAdj[whichOne].split(',')) + ' ' + bobj.rand(bobj.alphaNoun[whichOne].split(',')) + ' from ' + bobj.rand(bobj.placename[whichOne].split(','));
+                return ", the "+bobj.rand(bobj.alphaAdj[whichOne]) + ' ' + bobj.rand(bobj.alphaNoun[whichOne]) + ' from ' + bobj.rand(bobj.placename[whichOne]);
             else
-                return ", the " + bobj.rand(bobj.placename[whichOne].split(',')) + ' ' + bobj.rand(bobj.alphaNoun[whichOne].split(','));
+                return ", the " + bobj.rand(bobj.placename[whichOne]) + ' ' + bobj.rand(bobj.alphaNoun[whichOne]);
         }
         return '';
     };
@@ -201,32 +217,29 @@ function BurlesqueName() {
                 bobj.totalAlphaLength = 0;
                 bobj.totalPlaceLength = 0;
                 for (var i = 0; i < 26; ++i) {
-                    bobj.totalAlphaLength += bobj.alphaFname[i].split(',').length;
-                    bobj.totalPlaceLength += bobj.placename[i].split(',').length;
+                    bobj.totalAlphaLength += bobj.alphaFname[i].length;
+                    bobj.totalPlaceLength += bobj.placename[i].length;
                 }
             }
             do {
-                num = Math.floor(Math.random() * 26);
+                num = bobj.rand(bobj.alphaNum);
             } while (bobj.alphaFname[num] == '' || bobj.placename[num] == '');
             
-            arr1 = bobj.alphaFname[num].split(',');
-            arr2 = bobj.placename[num].split(',');
-            
-            return [ bobj.rand(arr2) + ' ' + bobj.rand(arr1), bobj.totalAlphaLength * bobj.totalPlaceLength ] ;
+            return [ bobj.rand(bobj.placename[num]) + ' ' + bobj.rand(bobj.alphaFname[num]), bobj.totalAlphaLength * bobj.totalPlaceLength ] ;
         },
         function(bobj) {
             if (! bobj.totalAlphaLength) {
                 bobj.totalAlphaLength = 0;
                 bobj.totalPlaceLength = 0;
                 for (var i = 0; i < 26; ++i) {
-                    bobj.totalAlphaLength += bobj.alphaFname[i].split(',').length;
-                    bobj.totalPlaceLength += bobj.placename[i].split(',').length;
+                    bobj.totalAlphaLength += bobj.alphaFname[i].length;
+                    bobj.totalPlaceLength += bobj.placename[i].length;
                 }
             }
             if (! bobj.suffixLength) {
                 bobj.alphaNounLength = 0;
                 for (var i = 0; i < 26; ++i)
-                    bobj.alphaNounLength += bobj.alphaNoun[i].split(',').length;
+                    bobj.alphaNounLength += bobj.alphaNoun[i].length;
                 
                 bobj.suffixLength = bobj.totalPlaceLength * bobj.alphaNounLength;
             }
