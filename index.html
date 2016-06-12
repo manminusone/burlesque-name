@@ -16,6 +16,8 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -45,10 +47,17 @@
 		  var nn = new NiceNumber();
 		  $('p#serving')[0].innerText = 'Currently serving ' + nn.text(b.namespaceSize()) + ' names!';
 
-		  $('a#nextbutton').click(function() {
-		    pg.innerText = b.name()[0];
-		  });
 
+		  var reloadFn = function(e) { pg.innerText = this.cachedname()[0]; };
+		  $('a#nextbutton').bind(
+		  	($.support.touch ? 'tap' : 'click'),  // use tap if supported, because it's faster
+		  	reloadFn.bind(b)
+		  );
+
+		  $.mobile.defaultPageTransition   = 'none';
+		  $.mobile.defaultDialogTransition = 'none';
+		  $.mobile.buttonMarkup.hoverDelay = 0;
+		  $('.ui-loader').hide(); // hide the JQM widget
 		});
 	</script>
 
