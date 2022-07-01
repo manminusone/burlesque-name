@@ -1,7 +1,12 @@
-# burlesque-name
-The code repository for the Burlesque Name Generator. http://burlesque.name/
+# Give Up GitHub
 
+This project has given up GitHub.  ([See Software Freedom Conservancy's *Give Up  GitHub* site for details](https://GiveUpGitHub.org).)
 
-The Burlesque Name generator uses a large database of first and last names to generate a randomized pseudonym (hopefully) suitable for use as a burlesque pseudonym. If you don't like the results, just reload for another name!
+You can now find this project at https://codeberg.org/manminusone/burlesque-name instead.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+Any use of this project's code by GitHub Copilot, past or present, is done without our permission.  We do not consent to GitHub's use of this project's code in Copilot.
+
+Join us; you can [give up GitHub](https://GiveUpGitHub.org) too!
+
+![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
+
